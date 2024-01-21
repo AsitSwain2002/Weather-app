@@ -1,4 +1,5 @@
 let time = document.querySelector(".in-box1");
+let am_pm = document.querySelector(".am-pm") 
 let cell = document.querySelector(".in-cel");
 let wind = document.querySelector(".wind");
 let btn = document.querySelector(".btn");
@@ -16,8 +17,12 @@ let wind_dir = document.querySelector(".wind_dir");
 // const showTime = () => {
 //   const date = new Date();
 //   const hr = date.getHours();
-//   const min = date.getMinutes();
-//   time.innerHTML = `${hr}:${min}`;
+//   if(hr>12){
+//     am_pm.innerHTML = "PM"
+//   }
+//   else{
+//     am_pm.innerHTML = "AM"
+//   }
 // };
 btn.addEventListener("click", () => {
   const a = text.value;
